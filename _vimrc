@@ -1,6 +1,7 @@
 "{{{ 基本设置
 set number                              " 显示行号
 set hlsearch                            " 高亮搜索
+set ignorecase                          " 自动补全忽略大小写
 "}}}
 
 "{{{ 主题颜色
