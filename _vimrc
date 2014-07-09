@@ -5,10 +5,7 @@ set hlsearch                            " 高亮搜索
 
 "{{{ 主题颜色
 set t_Co=256                            " 开启256色支持
-syntax on                               " 语法高亮
-syntax reset                            " 语法高亮
-set background=dark                     " 使用暗色背景
-color torte                             " 配色方案
+colorscheme desertEx_256                " 沙漠主题颜色
 "}}}
 
 "{{{ 标尺状态栏
