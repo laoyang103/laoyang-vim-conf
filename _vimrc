@@ -15,7 +15,7 @@ set laststatus=2                        " 显示文件状态
 set cursorline                          " 高亮当前行
 "}}}
 
-"{{{ 缩进/换行/空白/行号/折叠/滚动
+"{{{ 缩进/换行/空白/滚动
 " 缩进
 set autoindent                          " 开启新行时，自动缩进
 set smartindent                         " 开启新行时，智能缩进
@@ -33,6 +33,9 @@ set softtabstop=4                       " 配合tabstop
 set listchars=tab:▸\ ,trail:▫           " 指定Tab和结尾空白字符
 autocmd FileType make   set      noexpandtab
 set backspace=eol,start,indent          " 插入模式下使用 <BS>、<Del> <C-W> <C-U>
+
+" 滚动
+set scrolloff=15                        " 滚动时光标上下保留行数
 "}}}
 
 "{{{ 代码折叠
@@ -64,8 +67,9 @@ nnoremap    <C-l>        <C-W>l
 "}}}
 
 "{{{ 插入模式下光标移动
-inoremap    <C-o>        <down>
-inoremap    <C-p>        <up>
+inoremap    <C-o>        <down>         " 自动补全上下移动
+inoremap    <C-p>        <up>           " 自动补全上下移动
+inoremap    jk           <esc>          " 插入模式快速切换到普通模式
 "}}}
 
 "{{{ NERDTree文件浏览器插件
