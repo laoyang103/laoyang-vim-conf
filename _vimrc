@@ -6,7 +6,8 @@ set ignorecase                          " 自动补全忽略大小写
 
 "{{{ 主题颜色
 set t_Co=256                            " 开启256色支持
-colorscheme desertEx_256                " 沙漠主题颜色
+"colorscheme desertEx_256               " 沙漠主题颜色
+colorscheme Mustang                     " 野马主题颜色
 "}}}
 
 "{{{ 标尺状态栏
