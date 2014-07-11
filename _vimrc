@@ -68,9 +68,10 @@ nnoremap    <C-l>        <C-W>l
 "}}}
 
 "{{{ 插入模式下光标移动
-inoremap    <C-o>        <down>         " 自动补全上下移动
-inoremap    <C-p>        <up>           " 自动补全上下移动
-inoremap    jk           <esc>          " 插入模式快速切换到普通模式
+inoremap    <C-i>        <space><backspace>
+inoremap    <C-o>        <down>
+inoremap    <C-p>        <up>
+inoremap    jk           <esc>
 "}}}
 
 "{{{ NERDTree文件浏览器插件
