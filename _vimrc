@@ -2,9 +2,9 @@
 set number                              " 显示行号
 set hlsearch                            " 高亮搜索
 set ignorecase                          " 自动补全忽略大小写
-set ignorecase                          " 自动补全忽略大小写
-set mouse=a                             " 所有模式开始鼠标支持
+set mouse=a                             " 开始鼠标支持
 set wildmenu                            " 命令模式强力补全
+let leader = ","                        " 使用,作为leader
 "}}}
 
 "{{{ 主题颜色
@@ -71,10 +71,20 @@ nnoremap    <C-l>        <C-W>l
 "}}}
 
 "{{{ 插入模式下光标移动
-inoremap    <C-i>        <space><backspace>
+inoremap    <C-j>        <down>
+inoremap    <C-k>        <up>
+inoremap    <C-h>        <left>
+inoremap    <C-l>        <right>
 inoremap    <C-o>        <down>
 inoremap    <C-p>        <up>
+"}}}
+
+"{{{ 插入模式下映射键
 inoremap    jj           <esc>
+"}}}
+
+"{{{ 常规模式下leader代码宏
+nnoremap   ,s            oSystem.out.println("");<left><left><left>
 "}}}
 
 "{{{ NERDTree文件浏览器插件
