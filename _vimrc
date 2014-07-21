@@ -4,7 +4,6 @@ set hlsearch                            " 高亮搜索
 set ignorecase                          " 自动补全忽略大小写
 set mouse=a                             " 开始鼠标支持
 set wildmenu                            " 命令模式强力补全
-let leader = ","                        " 使用,作为leader
 "}}}
 
 "{{{ 主题颜色
@@ -83,8 +82,9 @@ inoremap    <C-p>        <up>
 inoremap    jj           <esc>
 "}}}
 
-"{{{ 常规模式下leader代码宏
+"{{{ 常规模式下leader代码宏和自定义快捷键
 nnoremap   ,s            oSystem.out.println("");<left><left><left>
+nnoremap   ,w            :w<cr>
 "}}}
 
 "{{{ NERDTree文件浏览器插件
