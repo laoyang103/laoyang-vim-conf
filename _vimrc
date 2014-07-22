@@ -69,6 +69,7 @@ nnoremap    <C-h>        <C-W>h
 nnoremap    <C-l>        <C-W>l
 "}}}
 
+
 "{{{ 插入模式下光标移动
 inoremap    <C-j>        <down>
 inoremap    <C-k>        <up>
@@ -83,8 +84,11 @@ inoremap    jj           <esc>
 "}}}
 
 "{{{ 常规模式下leader代码宏和自定义快捷键
-nnoremap   ,s            oSystem.out.println("");<left><left><left>
+nnoremap   ,S            oSystem.out.println("");<left><left><left>
 nnoremap   ,w            :w<cr>
+nnoremap   ,q            :q<cr>
+nnoremap   ,s            :%s///gc<left><left><left><left>
+vnoremap   ,s            :s///gc<left><left><left><left>
 "}}}
 
 "{{{ NERDTree文件浏览器插件
@@ -99,6 +103,7 @@ let g:Tb_TabWrap = 1                    " 每个选项卡之间间隔
 "}}}
 
 "{{{ Buffers/Tab操作
-map         <C-Tab>         :bn<CR>
-map         <S-Tab>         :bp<CR>
+noremap     <S-h>        :bprev<CR>
+noremap     <S-l>        :bnext<CR>
+nnoremap    ,d           :Bclose<CR>
 "}}}
