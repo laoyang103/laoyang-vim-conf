@@ -77,18 +77,26 @@ inoremap    <C-h>        <left>
 inoremap    <C-l>        <right>
 inoremap    <C-o>        <down>
 inoremap    <C-p>        <up>
-"}}}
-
-"{{{ 插入模式下映射键
 inoremap    jj           <esc>
+inoremap    kk           <cr>
 "}}}
 
 "{{{ 常规模式下leader代码宏和自定义快捷键
 nnoremap   ,S            oSystem.out.println("");<left><left><left>
+nnoremap   ,a            iprintf("%", );<left><left><left><left><left>
 nnoremap   ,w            :w<cr>
 nnoremap   ,q            :q<cr>
 nnoremap   ,s            :%s///gc<left><left><left><left>
+nnoremap   ,f            :/
+nnoremap   ,e            :<up>
+"}}}
+
+"{{{ 可视模式下leader代码宏和自定义快捷键
 vnoremap   ,s            :s///gc<left><left><left><left>
+"}}}
+
+"{{{ 命令行模式下leader代码宏和自定义快捷键
+cnoremap    kk           <CR>
 "}}}
 
 "{{{ NERDTree文件浏览器插件
