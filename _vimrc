@@ -111,7 +111,7 @@ let g:Tb_TabWrap = 1                    " 每个选项卡之间间隔
 "}}}
 
 "{{{ Buffers/Tab操作
-noremap     <S-h>        :bprev<CR>
-noremap     <S-l>        :bnext<CR>
+noremap     <C-u>        :bprev<CR>
+noremap     <C-i>        :bnext<CR>
 nnoremap    ,d           :Bclose<CR>
 "}}}
