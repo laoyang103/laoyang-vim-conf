@@ -37,7 +37,8 @@ set listchars=tab:▸\ ,trail:▫           " 指定Tab和结尾空白字符
 autocmd FileType make   set      noexpandtab
 set backspace=eol,start,indent          " 插入模式下使用 <BS>、<Del> <C-W> <C-U>
 
-" 滚动
+" 滚动.透明
+hi Normal ctermfg=15 ctermbg=none
 set scrolloff=15                        " 滚动时光标上下保留行数
 "}}}
 
