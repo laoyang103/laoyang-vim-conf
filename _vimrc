@@ -37,7 +37,8 @@ set listchars=tab:▸\ ,trail:▫           " 指定Tab和结尾空白字符
 autocmd FileType make   set      noexpandtab
 set backspace=eol,start,indent          " 插入模式下使用 <BS>、<Del> <C-W> <C-U>
 
-" 滚动
+" 滚动.透明
+hi Normal ctermfg=15 ctermbg=none
 set scrolloff=15                        " 滚动时光标上下保留行数
 "}}}
 
@@ -81,6 +82,10 @@ inoremap    jj           <esc>
 inoremap    kk           <cr>
 "}}}
 
+"{{{ F1 --- F12快捷键
+nnoremap    <F3>         :marks<cr>
+"}}}
+
 "{{{ 常规模式下leader代码宏和自定义快捷键
 nnoremap   ,S            oSystem.out.println("");<left><left><left>
 nnoremap   ,a            iprintf("%", );<left><left><left><left><left>
@@ -111,7 +116,7 @@ let g:Tb_TabWrap = 1                    " 每个选项卡之间间隔
 "}}}
 
 "{{{ Buffers/Tab操作
-noremap     <S-h>        :bprev<CR>
-noremap     <S-l>        :bnext<CR>
+noremap     <C-u>        :bprev<CR>
+noremap     <C-i>        :bnext<CR>
 nnoremap    ,d           :Bclose<CR>
 "}}}
