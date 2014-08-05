@@ -9,8 +9,8 @@ set wildmenu                            " 命令模式强力补全
 "{{{ 主题颜色
 set t_Co=256                            " 开启256色支持
 "colorscheme desertEx_256                " 沙漠主题颜色
-"colorscheme Mustang                     " 野马主题颜色
-colorscheme molokai			" 使用molokai主题
+colorscheme Mustang                     " 野马主题颜色
+"colorscheme molokai			" 使用molokai主题
 "}}}
 
 "{{{ 标尺状态栏
@@ -95,6 +95,7 @@ nnoremap   ,q            :q<cr>
 nnoremap   ,s            :%s///gc<left><left><left><left>
 nnoremap   ,f            :/
 nnoremap   ,e            :<up>
+nnoremap   ,t            :TlistToggle<cr>
 "}}}
 
 "{{{ 可视模式下leader代码宏和自定义快捷键
@@ -120,4 +121,12 @@ let g:Tb_TabWrap = 1                    " 每个选项卡之间间隔
 noremap     <C-u>        :bprev<CR>
 noremap     <C-i>        :bnext<CR>
 nnoremap    ,d           :Bclose<CR>
+"}}}
+
+"{{{ Tag list (ctags)操作
+let Tlist_Show_One_File = 1            " 不同时显示多个文件的tag，只显示当前文件的
+let Tlist_Exit_OnlyWindow = 1          " 如果taglist窗口是最后一个窗口，则退出vim
+let Tlist_Use_Right_Window = 1         " 在右侧窗口中显示taglist窗口
+let Tlist_Ctags_Cmd = '/usr/bin/ctags' " ctags可执行文件所在路径
+let Tlist_GainFocus_On_ToggleOpen = 1  " 打开taglist时，光标保留在taglist窗口
 "}}}
