@@ -20,16 +20,11 @@ set cursorline                          " 高亮当前行
 "}}}
 
 "{{{ 缩进/换行/空白/滚动
-" 缩进
 set autoindent                          " 开启新行时，自动缩进
 set smartindent                         " 开启新行时，智能缩进
 set cindent                             " C程序自动缩进
-
-" 换行
 set nowrap                              " 不折行显示
 set lbr                                 " 不在单词中间断行
-
-" 空白
 set shiftwidth=4                        " 缩进空白数
 set tabstop=4                           " Tab所占空格数
 set expandtab                           " 将Tab展开为空格
@@ -37,10 +32,15 @@ set softtabstop=4                       " 配合tabstop
 set listchars=tab:▸\ ,trail:▫           " 指定Tab和结尾空白字符
 autocmd FileType make   set      noexpandtab
 set backspace=eol,start,indent          " 插入模式下使用 <BS>、<Del> <C-W> <C-U>
+"}}}
 
-" 滚动.透明
+"{{{ 滚动.透明
 hi Normal ctermfg=15 ctermbg=none
 set scrolloff=15                        " 滚动时光标上下保留行数
+"}}}
+"
+"{{{ 自动补全
+set completeopt=longest,menu            " 只显示匹配项目不默认选中第一个
 "}}}
 
 "{{{ 代码折叠
@@ -71,6 +71,12 @@ nnoremap    <C-h>        <C-W>h
 nnoremap    <C-l>        <C-W>l
 "}}}
 
+"{{{ 命令模式下光标移动
+cnoremap    <C-j>        <down>
+cnoremap    <C-k>        <up>
+cnoremap    <C-h>        <left>
+cnoremap    <C-l>        <right>
+"}}}
 
 "{{{ 插入模式下光标移动
 inoremap    <C-j>        <down>
