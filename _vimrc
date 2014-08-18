@@ -8,8 +8,8 @@ set wildmenu                            " 命令模式强力补全
 
 "{{{ 主题颜色
 set t_Co=256                            " 开启256色支持
-"colorscheme desertEx_256               " 沙漠主题颜色
-colorscheme Mustang                     " 野马主题颜色
+colorscheme desertEx_256               " 沙漠主题颜色
+"colorscheme Mustang                     " 野马主题颜色
 "colorscheme molokai			        " 使用molokai主题
 "}}}
 
@@ -102,6 +102,7 @@ nnoremap   ,s            :%s///gc<left><left><left><left>
 nnoremap   ,f            :/
 nnoremap   ,e            :<up>
 nnoremap   ,t            :TlistToggle<cr>
+nnoremap   ,z            :NERDTreeToggle<cr>
 "}}}
 
 "{{{ 可视模式下leader代码宏和自定义快捷键
@@ -109,6 +110,7 @@ vnoremap   ,s            :s///gc<left><left><left><left>
 "}}}
 
 "{{{ 命令行模式下leader代码宏和自定义快捷键
+cnoremap    jj           <esc>
 cnoremap    kk           <CR>
 "}}}
 

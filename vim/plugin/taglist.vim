@@ -1548,7 +1548,7 @@ function! s:Tlist_Window_Init()
     set cpoptions&vim
 
     " Create buffer local mappings for jumping to the tags and sorting the list
-    nnoremap <buffer> <silent> <CR>
+    nnoremap <buffer> <silent> o
                 \ :call <SID>Tlist_Window_Jump_To_Tag('useopen')<CR>
     nnoremap <buffer> <silent> +
                 \ :call <SID>Tlist_Window_Jump_To_Tag('newwin')<CR>
@@ -1566,7 +1566,7 @@ function! s:Tlist_Window_Init()
                 \ :call <SID>Tlist_Window_Jump_To_Tag('useopen')<CR>
     nnoremap <buffer> <silent> s
                 \ :call <SID>Tlist_Change_Sort('cmd', 'toggle', '')<CR>
-    nnoremap <buffer> <silent> o :silent! foldopen<CR>
+    nnoremap <buffer> <silent> <CR> :silent! foldopen<CR>
     nnoremap <buffer> <silent> x :silent! foldclose<CR>
     nnoremap <buffer> <silent> * :silent! %foldopen!<CR>
     nnoremap <buffer> <silent> = :silent! %foldclose<CR>
