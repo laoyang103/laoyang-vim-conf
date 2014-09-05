@@ -95,13 +95,14 @@ nnoremap    <F3>         :marks<cr>
 
 "{{{ 常规模式下leader代码宏和自定义快捷键
 nnoremap   ,S            oSystem.out.println("");<left><left><left>
-nnoremap   ,a            iprintf("%", );<left><left><left><left><left>
 nnoremap   ,w            :w<cr>
 nnoremap   ,q            :q<cr>
 nnoremap   ,s            :%s///gc<left><left><left><left>
 nnoremap   ,f            :/
 nnoremap   ,e            :<up>
 nnoremap   ,t            :TlistToggle<cr>
+nnoremap   ,r            :call CscopeFind('s', expand('<cword>'))<cr>
+nnoremap   ,a            :call ToggleLocationList()<cr>
 nnoremap   ,z            :NERDTreeToggle<cr>
 "}}}
 
