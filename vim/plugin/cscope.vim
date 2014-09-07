@@ -25,9 +25,6 @@ com! -nargs=? -complete=dir CscopeGen call CreateCscopeDB("<args>")
 com! -nargs=0 CscopeList call <SID>ListDBs()
 com! -nargs=0 CscopeClear call <SID>ClearCscopeDB()
 
-nnoremap o <CR>
-nnoremap p <CR><C-W>j
-
 function! s:ClearCscopeDB()
   cs kill -1
   let s:loaded_dbs = []

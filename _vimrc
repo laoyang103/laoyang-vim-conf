@@ -91,6 +91,7 @@ inoremap    kk           <cr>
 
 "{{{ F1 --- F12快捷键
 nnoremap    <F3>         :marks<cr>
+nnoremap    <F4>         :!ctags -R<cr>
 "}}}
 
 "{{{ 常规模式下leader代码宏和自定义快捷键
