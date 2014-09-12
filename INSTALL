@@ -3,3 +3,6 @@ rm -f ~/.vimrc
 
 ln -s ${PWD}/vim ~/.vim
 ln -s ${PWD}/_vimrc ~/.vimrc
+
+cp -i ${PWD}/vim/yd /usr/local/bin
+chmod 755 /usr/local/bin/yd

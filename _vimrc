@@ -97,7 +97,6 @@ nnoremap    <F4>         :!ctags -R<cr>
 "{{{ 常规模式下leader代码宏和自定义快捷键
 nnoremap   ,S            oSystem.out.println("");<left><left><left>
 nnoremap   ,w            :w<cr>
-nnoremap   ,q            :q<cr>
 nnoremap   ,s            :%s///gc<left><left><left><left>
 nnoremap   ,f            :/
 nnoremap   ,e            :<up>
@@ -109,6 +108,7 @@ nnoremap   ,z            :NERDTreeToggle<cr>
 
 "{{{ 可视模式下leader代码宏和自定义快捷键
 vnoremap   ,s            :s///gc<left><left><left><left>
+vnoremap   ,d            :<bs><bs><bs><bs><bs>exe '!clear;yd '.'"'GetVisual().'"'<cr>
 "}}}
 
 "{{{ 命令行模式下leader代码宏和自定义快捷键
