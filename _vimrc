@@ -36,6 +36,7 @@ set backspace=eol,start,indent          " 插入模式下使用 <BS>、<Del> <C-
 
 "{{{ 滚动.透明
 hi Normal ctermfg=15 ctermbg=none
+hi Normal ctermfg=15 ctermbg=none
 set scrolloff=15                        " 滚动时光标上下保留行数
 "}}}
 "
