@@ -96,7 +96,6 @@ nnoremap    <F4>         :!ctags -R<cr>
 "}}}
 
 "{{{ 常规模式下leader代码宏和自定义快捷键
-nnoremap   ,S            oSystem.out.println("");<left><left><left>
 nnoremap   ,w            :w<cr>
 nnoremap   ,s            :%s///gc<left><left><left><left>
 nnoremap   ,f            :/
