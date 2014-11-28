@@ -2,7 +2,6 @@
 set number                              " 显示行号
 set hlsearch                            " 高亮搜索
 set ignorecase                          " 自动补全忽略大小写
-set mouse=a                             " 开始鼠标支持
 set wildmenu                            " 命令模式强力补全
 "}}}
 

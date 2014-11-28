@@ -1292,6 +1292,10 @@ function! <SID>Bf_SwitchTo( bufNum)
     call <SID>Win_Goto_Main()
     let l:vimbuf = <SID>Map_Get_key( a:bufNum )
     exec "b!" . l:vimbuf
+	exec 'foldopen'
+	exec 'foldopen'
+	exec 'foldopen'
+	exec 'foldopen'
 endfunction " %%
 
 
