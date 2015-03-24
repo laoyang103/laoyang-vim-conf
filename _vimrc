@@ -116,7 +116,7 @@ cnoremap    kk           <CR>
 "}}}
 
 "{{{ NERDTree文件浏览器插件
-autocmd VimEnter * NERDTree             " 自动加载
+"autocmd VimEnter * NERDTree             " 自动加载
 autocmd VimEnter * wincmd p             " 光标放到打开的文件
 let NERDTreeWinSize = 25                " 文件浏览窗口大小
 "}}}
