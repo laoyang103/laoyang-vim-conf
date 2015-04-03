@@ -50,6 +50,12 @@ set foldlevel=99                        " 默认的折叠级别，为0则表示�
 set foldcolumn=0                        " 折叠线所占的宽度
 "}}}
 
+"{{{ python shell make等缩进折叠
+autocmd FileType sh setlocal foldmethod=indent
+autocmd FileType python setlocal foldmethod=indent
+autocmd FileType automake setlocal foldmethod=indent
+"}}}
+
 "{{{ 用空格键开关折叠代码
 nnoremap <space> @=((foldclosed(line('.')) < 0) ? 'zc':'zo')<CR>    
 "}}}
@@ -92,6 +98,7 @@ inoremap    kk           <cr>
 "{{{ F1 --- F12快捷键
 nnoremap    <F3>         :marks<cr>
 nnoremap    <F4>         :!ctags -R<cr>
+nnoremap    <F5>         :!cscope -Rbq<CR>:cs reset<CR>
 "}}}
 
 "{{{ 常规模式下leader代码宏和自定义快捷键
@@ -116,7 +123,7 @@ cnoremap    kk           <CR>
 "}}}
 
 "{{{ NERDTree文件浏览器插件
-autocmd VimEnter * NERDTree             " 自动加载
+"autocmd VimEnter * NERDTree             " 自动加载
 autocmd VimEnter * wincmd p             " 光标放到打开的文件
 let NERDTreeWinSize = 25                " 文件浏览窗口大小
 "}}}
