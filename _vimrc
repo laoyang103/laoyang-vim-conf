@@ -29,6 +29,7 @@ set tabstop=4                           " Tab所占空格数
 set expandtab                           " 将Tab展开为空格
 set softtabstop=4                       " 配合tabstop
 set listchars=tab:▸\ ,trail:▫           " 指定Tab和结尾空白字符
+set pastetoggle=<F12>                   " 切换粘贴模式
 autocmd FileType make   set      noexpandtab
 set backspace=eol,start,indent          " 插入模式下使用 <BS>、<Del> <C-W> <C-U>
 "}}}
