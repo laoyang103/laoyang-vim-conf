@@ -53,6 +53,7 @@ set foldcolumn=0                        " 折叠线所占的宽度
 
 "{{{ python shell make等缩进折叠
 autocmd FileType sh setlocal foldmethod=indent
+autocmd FileType html setlocal foldmethod=indent
 autocmd FileType python setlocal foldmethod=indent
 autocmd FileType automake setlocal foldmethod=indent
 "}}}
