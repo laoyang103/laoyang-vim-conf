@@ -24,8 +24,8 @@ set smartindent                         " 开启新行时，智能缩进
 set cindent                             " C程序自动缩进
 set nowrap                              " 不折行显示
 set lbr                                 " 不在单词中间断行
-set shiftwidth=4                        " 缩进空白数
-set tabstop=4                           " Tab所占空格数
+set shiftwidth=2                        " 缩进空白数
+set tabstop=2                           " Tab所占空格数
 set expandtab                           " 将Tab展开为空格
 set softtabstop=4                       " 配合tabstop
 set listchars=tab:▸\ ,trail:▫           " 指定Tab和结尾空白字符
