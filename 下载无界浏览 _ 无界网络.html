@@ -1,0 +1,490 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0035)http://wujieliulan.com/download.php -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-hans" xml:lang="zh-hans"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>下载无界浏览 | 无界网络</title>
+  
+  <meta name="keywords" content="无界网络, Proxy, Censorship, 突破网络封锁, Anti-censorship, Block, Anti-blocking, Internet Freedom, Great Firewall, Green Tsunami, China, Golden Shield, 代理器,封网,反封网,网络自由,信息自由,新闻自由,匿名浏览,加密浏览,网络防火墙, 金盾工程">
+  <link rel="icon" href="http://wujieliulan.com/images/favicon.ico" type="image/ico">
+  <link rel="SHORTCUT ICON" href="http://wujieliulan.com/images/favicon.ico">
+  <link type="text/css" rel="stylesheet" media="all" href="./下载无界浏览 _ 无界网络_files/style.css">
+<script>
+window.onload=function() {
+    for (var i = 2; i <= 3; i++) {
+        var page = document.getElementById("tabpage_" + i);
+        page.style.display = "none";
+    }
+
+        for (var i = 1; i <= 3; i++) {
+                var item = document.getElementById("tabHeader_" + i);
+                if (i == 1) {
+                    item.parentNode.setAttribute("data-current", 1);
+                    item.className = "tabActiveHeader";
+                }
+                item.onclick = displayPage;
+        }
+}
+
+// on click of one of tabs
+function displayPage() {
+  var current = this.parentNode.getAttribute("data-current");
+  //remove class of activetabheader and hide old contents
+  document.getElementById("tabHeader_" + current).className = "";
+  document.getElementById("tabpage_" + current).style.display="none";
+
+  var ident = this.id.split("_")[1];
+  //add class of activetabheader to new active tab and show contents
+  this.className = "tabActiveHeader";
+  document.getElementById("tabpage_" + ident).style.display="block";
+  this.parentNode.setAttribute("data-current",ident);
+}
+
+function encodeToHex(str){
+    var r="";
+    var e=str.length;
+    var c=0;
+    var h;
+    while(c<e){
+        h=str.charCodeAt(c++).toString(16);
+        r+=h;
+    }
+    return r;
+}
+function _url_encode(url) {
+   if (url.indexOf("http") == 0 || url.indexOf("ftp") == 0) {	
+	return url.replace("://", "/");
+   } else {
+	return "http/".concat(url);
+   }
+}
+</script>
+
+</head>
+<body>
+<!--OUTLINE -->
+<div id="Outline" style="background: url(/images/bg-top.jpg) top center no-repeat">
+
+    <div class="clear-block">
+              <div style="clear:both"></div>
+            <div id="Header">
+<div style="float: right; text-align: center; width: 500px; padding-top: 10px;">
+	<form action="http://www.google.com/search" method="get" style="position: relative;" target="_blank">
+		<label for="sbi" style="display: none;">Enter your search terms</label> <input id="sbi" maxlength="255" name="q" size="32" style="border: 1px solid rgb(136, 191, 139); color: rgb(136, 191, 139); font-size: 12px; width: 300px; height: 25px;" type="text" value="Google 搜索"> <input id="sbb" name="sa" style="border: 1px solid rgb(136, 191, 139); background-color: rgb(136, 191, 139); color: rgb(255, 255, 255); font-size: 12px; height: 27px;" type="submit" value="谷歌搜索"> <label for="sbb" style="display: none;">Submit search form</label> <input name="forid" type="hidden" value="1"> <input name="ie" type="hidden" value="utf8"> <input name="oe" type="hidden" value="utf8"> <input name="cof" type="hidden" value="GALT:#008000;GL:1;DIV:#336699;VLC:663399;AH:center;BGC:FFFFFF;LBGC:336699;ALC:0000FF;LC:0000FF;T:000000;GFNT:0000FF;GIMP:0000FF;FORID:1"> <input name="hl" type="hidden" value="en"></form>
+<p style="padding-top: 10px; margin: 0pt; color: #900;">
+<b>2月12日:&nbsp;最新发布安卓手机翻墙:<a href="http://m.wujieliulan.com/userguide.html">无界一点通4.6</a> </b>
+<!-- <b>最新发布(1月27日):&nbsp;<a href="http://wujieliulan.com/download/u.exe">无界浏览19.01</a> </b> -->
+</p>
+	</div>
+	<img height="67" src="./下载无界浏览 _ 无界网络_files/logo.gif" style="float: left; margin-left: 10px;" width="342"></div>
+<div style="height: 35px; background: url(/images/nav-bg.jpg) repeat-x scroll 0% 0% transparent; padding-left: 20px;">
+	<div id="Nav" style="padding: 8px 0pt 5px; font-size: 15px;">
+		<a class="nav-pr42" href="http://wujieliulan.com/home.htm">无界首页</a> <a class="nav-pr42" href="http://wujieliulan.com/news.php">无界新闻</a> <a class="nav-pr42" href="http://wujieliulan.com/book.php">禁书禁片</a> <a class="nav-pr42" href="http://wujieliulan.com/sites.php">网站大全</a> <a class="nav-pr42" href="http://wujieliulan.com/download.php">软件下载</a> <a class="nav-pr42" href="http://wujieliulan.com/wjlink.php">索取无界网址</a> <a class="nav-pr42" href="http://wujieliulan.com/faq.php">常见问题</a> <a class="nav-pr42" href="http://wujieliulan.com/userguide.php">用户说明</a>  <a class="nav-pr42" href="https://forums.internetfreedom.org/index.php?board=8.0">用户反馈
+</a><a href="http://wujieliulan.com/about.php">关于我们</a></div>
+</div>
+            <!--
+              <div id="primarymenu">
+                                             
+                </div>
+      -->
+    </div><!-- /header -->
+ <div id="page">
+    <div id="middlecontainer">
+
+      
+      
+      <div id="main"> 
+        <div id="squeeze">
+                              <div id="squeeze-content">
+	    <div id="inner-content">
+                                        <div class="node">
+  
+  
+  
+  <div class="content"> <div id="maincontent">
+<div id="contentbox">
+<h1><img src="./下载无界浏览 _ 无界网络_files/dot.gif" align="middle"> 下载无界浏览 <img src="./下载无界浏览 _ 无界网络_files/dot.gif" align="middle"></h1><br>
+<div>
+	<p>
+		<br>
+		您可免费下载我们的用户软件。拥有我们的用户软件，您便可随时突破网络封锁, 安全、快速、自由地访问世界上的任何网站。</p>
+	<p>&nbsp;</p>
+	<p>
+		<b>无界浏览19.02: &nbsp;<a href="http://wujieliulan.com/download/u.zip"><u>压缩版</u></a>&nbsp;&nbsp;<a href="http://wujieliulan.com/download/u.exe"><u>执行版</u></a>&nbsp;(2019年2月15日)</b>
+		(下载后请检查<a href="http://wujieliulan.com/digitalsign.htm" target="_blank">数字签名(安全认证)</a>)</p>
+	<p>
+		<b>无界一点通: &nbsp;<a href="https://s3.amazonaws.com/xiazai/um.apk"><u>4.6</u></a>&nbsp;(2019年2月12日)</b></p>
+	<p>&nbsp;</p>
+
+<p><strong>当前网址</strong></p>
+<p>
+无界一点通:  <a href="https://s3.amazonaws.com/693/um.apk" target="_blank">https://s3.amazonaws.com/693/um.apk</a><br>
+无界浏览: &nbsp;&nbsp;&nbsp;<a href="https://git.io/vEJlj" target="_blank">https://git.io/vEJlj</a>
+</p>
+<p>&nbsp;</p>
+
+	<p><strong>（１）下载无界浏览</strong></p>
+	<table bgcolor="#7ee3fc" border="0" cellpadding="0" cellspacing="1" height="186" id="dltable" width="99%">
+	<tbody>
+		<tr>
+			<td align="center" bgcolor="#e0f4ff" width="31%">
+				名称</td>
+			<td align="center" bgcolor="#e0f4ff" width="55%">
+				校验码(MD5)</td>
+			<td align="center" bgcolor="#e0f4ff" width="14%">
+				下载</td>
+		</tr>
+              <tr bgcolor="#ffffff"> 
+                <td>安卓版:无界一点通4.6</td>
+                <td>981f7d67af4b6b9b2194b431c8942ba2</td>
+                <td><a href="https://s3.amazonaws.com/wujie/um.apk">下载</a></td>
+              </tr>
+              <tr bgcolor="#ffffff"> 
+                <td>无界浏览19.02(压缩版)</td>
+                <td>ae3a28953440346b20faa79632eaf927</td>
+                <td><a href="http://wujieliulan.com/download/u.zip">下载</a></td>
+              </tr>
+              <tr bgcolor="#ffffff"> 
+                <td>无界浏览19.02(执行版)</td>
+                <td>48fe7b7c67bc65aaa1f0a1318b45a3b5</td>
+                <td><a href="http://wujieliulan.com/download/u.exe">下载</a></td>
+             </tr>
+              <tr bgcolor="#ffffff"> 
+                <td>无界火狐(Firefox)工具17.03</td>
+                <td>f2956822f289bc10ef9e4cefb56abd54</td>
+                <td><a href="http://wujieliulan.com/download/u1703.xpi">下载</a></td>
+              </tr> 
+              <tr bgcolor="#ffffff"> 
+                <td>Linux VPN17.03</td>
+                <td>6d70498430bc4f86f50f7ff4447a8682</td>
+                <td><a href="http://wujieliulan.com/download/u1703">下载</a></td>
+             </tr>  
+              <tr bgcolor="#ffffff"> 
+                <td>无界安卓手机英文版1.13</td>
+                <td>ec0712ffd9b14f24d57578f9a0f56cd4</td>
+                <td><a href="http://wujieliulan.com/download/u113.apk">下载</a></td>
+             </tr>                 
+               <tr bgcolor="#ffffff"> 
+                <td>无界浏览用户说明</td>
+                <td>&nbsp;</td>
+                <td><a href="https://s3.amazonaws.com/xiazai/ultrasurf_userguide.zip">下载</a></td>
+              </tr>
+              <tr bgcolor="#ffffff">
+
+                <td>无界火狐工具用户说明</td>
+                <td>&nbsp;</td>
+                <td><a href="http://wujieliulan.com/wjbutton.htm">下载</a></td>
+              </tr> 
+              <tr bgcolor="#ffffff"> 
+                <td>&nbsp;</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr bgcolor="#ffffff"> 
+                <td>旧版无界:</td>
+                <td></td>
+                <td></td>
+              </tr>
+             <tr bgcolor="#ffffff"> 
+                <td>安卓版:无界一点通4.5</td>
+                <td>a50ae6a24b4fb68e73ad568a3b113f90</td>
+                <td><a href="https://s3.amazonaws.com/wujie/um4.5.apk">下载</a></td>
+              </tr>
+              <tr bgcolor="#ffffff"> 
+                <td>安卓版:无界一点通4.3</td>
+                <td>5126fa0aa85c6ad1a551893a09ecc28b</td>
+                <td><a href="https://s3.amazonaws.com/wujie/um4.3.apk">下载</a></td>
+              </tr>
+            <tr bgcolor="#ffffff"> 
+                <td>无界浏览18.06(压缩版)</td>
+                <td>a0882af5f75a88b8f48d4564bce45a09</td>
+                <td><a href="http://wujieliulan.com/download/u1806.zip">下载</a></td>
+              </tr>
+              <tr bgcolor="#ffffff"> 
+                <td>无界浏览18.06(执行版)</td>
+                <td>621550f1287a6c72de1321553f34847e</td>
+                <td><a href="http://wujieliulan.com/download/u1806.exe">下载</a></td>
+             </tr>
+             <tr bgcolor="#ffffff"> 
+                <td>无界浏览18.04(压缩版)</td>
+                <td>031db03d8b321d3d4afdb9d6b6270360</td>
+                <td><a href="http://wujieliulan.com/download/u1804.zip">下载</a></td>
+              </tr>
+              <tr bgcolor="#ffffff"> 
+                <td>无界浏览18.04(执行版)</td>
+                <td>9c385165373e9400304968e7f87273e6</td>
+                <td><a href="http://wujieliulan.com/download/u1804.exe">下载</a></td>
+             </tr>
+              <tr bgcolor="#ffffff"> 
+                <td>无界浏览18.02(压缩版)</td>
+                <td>8cd443ef55eb274623d1ab3f454c0168</td>
+                <td><a href="http://wujieliulan.com/download/u1802.zip">下载</a></td>
+              </tr>
+              <tr bgcolor="#ffffff"> 
+                <td>无界浏览18.02(执行版)</td>
+                <td>008aae2a9a91cc55ad65da9661ad6ad3</td>
+                <td><a href="http://wujieliulan.com/download/u1802.exe">下载</a></td>
+             </tr>
+              <tr bgcolor="#ffffff"> 
+                <td>无界浏览17.04(压缩版)</td>
+                <td>bd2e76db83e70abba369ff2a9635ad67</td>
+                <td><a href="http://wujieliulan.com/download/u1704.zip">下载</a></td>
+              </tr>
+                <tr><td>无界浏览17.04(执行版)</td>
+                <td>8b6fb68b61d0d27195f355c1a101feac</td>
+                <td><a href="http://wujieliulan.com/download/u1704.exe">下载</a></td>
+             </tr>
+             <tr bgcolor="#ffffff"> 
+                <td>无界浏览16.03(压缩版)</td>
+                <td>5b44e6b6489d026ea3cb55674dd4c67c</td>
+                <td><a href="http://wujieliulan.com/download/u1603.zip">下载</a></td>
+              </tr>
+              <tr bgcolor="#ffffff"> 
+                <td>无界浏览16.03(执行版)</td>
+                <td>c92ca9b2e2b5463fe2ada76c7eed1b58</td>
+                <td><a href="http://wujieliulan.com/download/u1603.exe">下载</a></td>
+             </tr>
+              <tr bgcolor="#ffffff"> 
+                <td>无界浏览15.04(压缩版)</td>
+                <td>ec9ada5bd466b06fad955e57c90059fc</td>
+                <td><a href="http://wujieliulan.com/download/u1504.zip">下载</a></td>
+              </tr>
+              <tr bgcolor="#ffffff"> 
+                <td>无界浏览15.04(执行版)</td>
+                <td>08cd5b2aa0a51caf9be8306ed5f912d6</td>
+                <td><a href="http://wujieliulan.com/download/u1504.exe">下载</a></td>
+             </tr>
+           <tr bgcolor="#ffffff"> 
+                <td>无界浏览15.02(压缩版)</td>
+                <td>1d7e5dc61154a43612e56b7dee58eac2</td>
+                <td><a href="http://wujieliulan.com/download/u1502.zip">下载</a></td>
+              </tr>
+              <tr bgcolor="#ffffff"> 
+                <td>无界浏览15.02(执行版)</td>
+                <td>5df5990318894933cf68678f1e028f80</td>
+                <td><a href="http://wujieliulan.com/download/u1502.exe">下载</a></td>
+             </tr>
+             <tr bgcolor="#ffffff"> 
+                <td>无界浏览15.01(压缩版)</td>
+                <td>d2bd1d407cc00aaf944e718036d5dd7c</td>
+                <td><a href="http://wujieliulan.com/download/u1501.zip">下载</a></td>
+              </tr>
+                <tr bgcolor="#ffffff"> 
+                <td>无界浏览15.01(执行版)</td>
+                <td>a85bb2e5c82e7795a6ece6867ce2e407</td>
+                <td><a href="http://wujieliulan.com/download/u1501.exe">下载</a></td>
+             </tr>
+              <tr bgcolor="#ffffff"> 
+                <td>无界浏览14.05(压缩版)</td>
+                <td>107b392417cbd17d32f55b09e774a8e4</td>
+                <td><a href="http://wujieliulan.com/download/u1405.zip">下载</a></td>
+              </tr>
+              <tr bgcolor="#ffffff"> 
+                <td>无界浏览14.05(执行版)</td>
+                <td>a93f31991e187662be9ce38c264b1115</td>
+                <td><a href="http://wujieliulan.com/download/u1405.exe">下载</a></td>
+              </tr>
+              <tr bgcolor="#ffffff"> 
+                <td>无界浏览14.04(压缩版)</td>
+                <td>026b5640e2613119dca395eadb881425</td>
+                <td><a href="http://wujieliulan.com/download/u1404.zip">下载</a></td>
+              </tr>
+              <tr bgcolor="#ffffff"> 
+                <td>无界浏览14.04(执行版)</td>
+                <td>96277ff94da577cfcbc72568cb43cfd7</td>
+                <td><a href="http://wujieliulan.com/download/u1404.exe">下载</a></td>
+             </tr>
+              <tr bgcolor="#ffffff"> 
+                <td>无界浏览14.03(压缩版)</td>
+                <td>e8e698bbd69f000c4fe3200456e5a584</td>
+                <td><a href="http://wujieliulan.com/download/u1403.zip">下载</a></td>
+              </tr>
+              <tr bgcolor="#ffffff"> 
+                <td>无界浏览14.03(执行版)</td>
+                <td>a38ffe5cab0712929005ca7ebdae63e2</td>
+                <td><a href="http://wujieliulan.com/download/u1403.exe">下载</a></td>
+             </tr>
+
+              <tr bgcolor="#ffffff"> 
+                <td>无界浏览13.04(压缩版)</td>
+                <td>154994089677d00555611fd5d480e093</td>
+                <td><a href="http://wujieliulan.com/download/u1304.zip">下载</a></td>
+              </tr>
+              <tr bgcolor="#ffffff"> 
+                <td>无界浏览13.04(执行版)</td>
+                <td>e4c0efe1c507f405d7b5dd169b842825</td>
+                <td><a href="http://wujieliulan.com/download/u1304.exe">下载</a></td>
+             </tr>
+              <tr bgcolor="#ffffff"> 
+                <td>无界浏览12.10(压缩版)</td>
+                <td>041900dacc3b5217b0dd47cf8488b21e</td>
+                <td><a href="http://wujieliulan.com/download/u1210.zip">下载</a></td>
+              </tr>
+              <tr bgcolor="#ffffff"> 
+                <td>无界浏览12.10(执行版)</td>
+                <td>198717353aa52fdc8b895b219d425677</td>
+                <td><a href="http://wujieliulan.com/download/u1210.exe">下载</a></td>
+             </tr> 
+              <tr bgcolor="#ffffff"> 
+                <td>无界浏览12.08(压缩版)</td>
+                <td>e0a68b9da3278cfaccca0b67394b2173</td>
+                <td><a href="http://wujieliulan.com/download/u1208.zip">下载</a></td>
+              </tr>
+              <tr bgcolor="#ffffff"> 
+                <td>无界浏览12.08(执行版)</td>
+                <td>5c55d3670eb63c41ed814b5c328a9835</td>
+                <td><a href="http://wujieliulan.com/download/u1208.exe">下载</a></td>
+             </tr> 
+              <tr bgcolor="#ffffff"> 
+                <td>无界浏览12.07(压缩版)</td>
+                <td>8af59a89e99941ff27b38ef9a8a4763f</td>
+                <td><a href="http://wujieliulan.com/download/u1207.zip">下载</a></td>
+              </tr>
+              <tr bgcolor="#ffffff"> 
+                <td>无界浏览12.07(执行版)</td>
+                <td>8097abff61812fb955f3bef1775364c2</td>
+                <td><a href="http://wujieliulan.com/download/u1207.exe">下载</a></td>
+             </tr> 
+              <tr bgcolor="#ffffff"> 
+                <td>无界浏览12.04(压缩版)</td>
+                <td>7747d6a39b39ddeb663f30bb83b80b41</td>
+                <td><a href="http://wujieliulan.com/download/u1204.zip">下载</a></td>
+              </tr>
+              <tr bgcolor="#ffffff"> 
+                <td>无界浏览12.04(执行版)</td>
+                <td>0b6579fbeb72273972629643c645c5a5</td>
+                <td><a href="http://wujieliulan.com/download/u1204.exe">下载</a></td>
+             </tr> 
+              <tr bgcolor="#ffffff"> 
+                <td>无界浏览12.03(压缩版)</td>
+                <td>19226452ec56c754992db24f2a683700</td>
+                <td><a href="http://wujieliulan.com/download/u1203.zip">下载</a></td>
+              </tr>
+              <tr bgcolor="#ffffff"> 
+                <td>无界浏览12.03(执行版)</td>
+                <td>9b2d42a1c18eda694c92c39d86a2a917</td>
+                <td><a href="http://wujieliulan.com/download/u1203.exe">下载</a></td>
+             </tr> 
+
+              <tr bgcolor="#ffffff"> 
+                <td>无界浏览11.04(压缩版)</td>
+                <td>63784a49a79b2631f647a1c2f78ea85e</td>
+                <td><a href="http://wujieliulan.com/download/u1104.zip">下载</a></td>
+              </tr>
+              <tr bgcolor="#ffffff"> 
+                <td>无界浏览11.04(执行版)</td>
+                <td>55238f9fc929cf4b043928530bc8cf8f</td>
+                <td><a href="http://wujieliulan.com/download/u1104.exe">下载</a></td>
+             </tr> 
+              <tr bgcolor="#ffffff"> 
+                <td>无界浏览11.03(压缩版)</td>
+                <td>b5e6723a697ddffa0ae0641d1a8d1400</td>
+                <td><a href="http://wujieliulan.com/download/u1103.zip">下载</a></td>
+              </tr>
+              <tr bgcolor="#ffffff"> 
+                <td>无界浏览11.03(执行版)</td>
+                <td>0fa5a44db46d695514eb288203ed3f15</td>
+                <td><a href="http://wujieliulan.com/download/u1103.exe">下载</a></td>
+             </tr> 
+
+              <tr bgcolor="#ffffff"> 
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+
+	</tbody>
+	</table>
+	<p>
+		&nbsp;</p>
+	<p>
+		无界浏览除了具备基于微软浏览器（IE）的全透明加密代理之外，启用了新发明的名为雄鹰之路的超级代理服务器连接技术，能够搜寻协调全球各种代理服务器资源供用户使用，速度快，容量无限大，为全球网络自由技术平台奠定基础。</p>
+	<p>
+		&nbsp;</p>
+	<p>
+		&nbsp;</p>
+	<p>
+		使用无界浏览，用户就象使用一般微软浏览器（IE）一样浏览任意网站，无界浏览在后台自动寻找最快速的代理服务器，并在整个过程中对所有浏览的内容进行超高程度的加密，加密程度超过国际金融网络传输安全标准。</p>
+	<p>
+		&nbsp;</p>
+	<p>
+		&nbsp;</p>
+	<p>
+		无界浏览实现了用户使用互联网的几乎所要求的一切基于HTTP的功能，如浏览各种网页，论坛上帖，网页注册，使用Webmail、数据上下传输，声音、图像、动画和电影的实时播放和下载，等等。详见无界浏览使用说明。</p>
+	<p>
+		&nbsp;</p>
+	<p>
+		&nbsp;</p>
+	<p>
+		无界浏览安装及使用说明</p>
+	<p>
+		&nbsp;</p>
+	<p>
+		1、 双击您下载的无界浏览执行文件，遵照弹出窗口上的提示便可。安装好后，在您的电脑桌面上会出现“UltraSurf”; 的图标。使用时，双击此图标即可。</p>
+	<p>
+		&nbsp;</p>
+	2、 无界浏览软件可直接在"视窗XP / 视窗2003 / 视窗2000 / 视窗NT / 视窗ME / 视窗98 / 视窗98 SE" 上运行。
+	<p>
+		&nbsp;</p>
+	3、 不断使用，自动得到连接更新。 当升级版的“无界浏览”推出时，在您打开主页时，会有一窗口弹出告诉您下载新的“无界浏览”。
+	<p>
+		&nbsp;</p>
+	<p>
+		<strong>（２）指纹校验程序 </strong></p>
+	<p>
+		&nbsp;</p>
+	<p>
+		指纹校验程序WinMD5Sum说明：</p>
+	<p>
+		&nbsp;</p>
+	<p>
+		一、 为什么要进行文件指纹验证<br>
+		共享文件从网上被下载回来运行，但这个文件有没有被人修改过，不得而知。如果这个文件被人修改过了，添加了木马或者病毒在里面，如何发现这种问题？下载一个文件，下了半天，又是断点续传，但文件到底有没有被破坏？</p>
+	<p>
+		<br>
+		二、 文件指纹验证的基本思路<br>
+		通过某种算法，对具体的文件进行校验，生成一传值（校验和）。如果再次校验以后所得到的值和原来的值不同，就可以认为，文件有问题。</p>
+	<p>
+		<br>
+		三、 使用指纹验证软件<br>
+		WinMd5Sum是一个普遍使用的指纹验证软件。如果您已经有了该软件，可直接运行使用，非常简单。如果没有，请下载安装WinMD5Sum。</p>
+	<p>
+		1、 在FileName文件名栏输入所要校验的文件位置，如：c:\downloads\u.zip<br>
+		2、 再在Compare比较栏铁贴上我们所给的比较校验码，如87cfa096caac6c7957729d8fb610c9a5<br>
+		3、 然后点击Compare比较，该程序就弹出小窗口说：<br>
+		MD5 Check Sums are the same，即MD5检查总和值一致，即告成功。<br>
+		如果说：MD5 Check Sums are the different，即MD5检查总和值不同，即验证结果失败，所下载的软件不能用。</p>
+</div>
+</div>
+</div>
+<!--Main Content End--></div>
+  <div class="clear-block clear"></div>
+
+  
+</div>
+ 
+                                        </div> <!-- /inner-content -->
+          </div><!-- /squeeze-content -->
+        </div><!-- /squeeze -->
+      </div> <!-- /main -->
+    </div><!-- /middle-container -->
+    <div style="clear:both"></div>
+            </div> <!-- /page -->
+  <div style="clear:both"></div>
+
+    <div id="footer" style="margin-top:20px">
+              <div id="footer-region">    <div id="footer" style="background: url(&quot;/images/bg-footer.jpg&quot;) repeat-x scroll center top transparent;">
+	<div class="padding-top20" id="footer">
+		<a class="nav-pr42" href="http://wujieliulan.com/home.htm">无界首页</a> <a class="nav-pr42" href="http://wujieliulan.com/news.php">无界新闻</a> <a class="nav-pr42" href="http://wujieliulan.com/book.php">禁书禁片</a> <a class="nav-pr42" href="http://wujieliulan.com/sites.php">网站大全</a> <a class="nav-pr42" href="http://wujieliulan.com/download.php">软件下载</a> <a class="nav-pr42" href="http://wujieliulan.com/wjlink.php">索取无界网址</a> <a class="nav-pr42" href="http://wujieliulan.com/faq.php">常见问题</a> <a class="nav-pr42" href="http://wujieliulan.com/userguide.php">用户说明</a> <a href="http://wujieliulan.com/about.php">关于我们</a>
+		<p style="color: rgb(115, 162, 140); font-size: 12px;">
+			<br>
+			<br>
+			<br>
+			无界网络公司 (C)2004 ~ 2018 UltraReach Internet Corp, All Rights Reserved</p>
+	</div>
+</div>
+</div>
+                </div><!-- /footer -->
+
+
+
+</div></body></html>
